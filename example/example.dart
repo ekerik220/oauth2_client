@@ -17,7 +17,8 @@ class Oauth2ClientExample {
       scopes: ['https://www.googleapis.com/auth/drive.readonly'],
     );
 
-    var resp = await hlp.get('https://www.googleapis.com/drive/v3/files');
+    var resp =
+        await hlp.get(Uri.parse('https://www.googleapis.com/drive/v3/files'));
 
     print(resp.body);
   }
